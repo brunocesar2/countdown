@@ -23,10 +23,10 @@
 }
 @media (max-width: 650px) {
   .title {
-    font-size: 2rem;
+    font-size: 3rem;
   }
   .countdown p {
-    font-size: 4rem;
+    font-size: 4.5rem;
   }
   .countdown span {
     font-size: 1rem;
@@ -34,9 +34,9 @@
 }
 @media (max-width: 450px) {
   .title {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   .countdown p {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 }
