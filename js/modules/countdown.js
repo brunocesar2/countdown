@@ -5,7 +5,7 @@ export default function initCountdown() {
   const seconds = document.querySelector("[data-seconds]");
   if (days && hours && minutes && seconds) {
     function countdown() {
-      const newYearDate = new Date("January 1, 2024");
+      const newYearDate = new Date(2024, 0, 1);
       const currentDate = new Date();
       const totalSeconds = (newYearDate - currentDate) / 1000;
 
@@ -22,7 +22,6 @@ export default function initCountdown() {
     function formatDate(time) {
       return time < 10 ? `0${time}` : `${time}`;
     }
-    countdown();
     setInterval(countdown, 1000);
   }
 }
