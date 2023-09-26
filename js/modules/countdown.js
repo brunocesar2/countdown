@@ -14,10 +14,10 @@ export default function initCountdown() {
       const minutesRemaining = Math.floor(totalSeconds / 60) % 60;
       const secondsRemaining = Math.floor(totalSeconds) % 60;
 
-      days.innerHTML = formatDate(daysRemaining);
-      hours.innerHTML = formatDate(hoursRemaining);
-      minutes.innerHTML = formatDate(minutesRemaining);
-      seconds.innerHTML = formatDate(secondsRemaining);
+      days.textContent = formatDate(daysRemaining);
+      hours.textContent = formatDate(hoursRemaining);
+      minutes.textContent = formatDate(minutesRemaining);
+      seconds.textContent = formatDate(secondsRemaining);
     }
     function formatDate(time) {
       return time < 10 ? `0${time}` : `${time}`;
